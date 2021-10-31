@@ -1,0 +1,17 @@
+@grid-unit: 16px;
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="grid-row"]
+{
+	.clearfix;
+	// .margin-horizontal( -@grid-unit );
+
+	& > [class*="grid-col"]
+	{
+		.float-left;
+		.padding-horizontal( @grid-unit / 2 );
+	}
+}

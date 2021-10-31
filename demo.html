@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grid Less</title>
+  </head>
+  <body>
+    <style media="screen">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        width: 1280px;
+        margin: 0 auto;
+        background-color: cyan;
+      }
+
+      [class*="grid-col"] {
+        /* border: 1px solid red; */
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <main>
+      <div class="grid-row-7">
+        <span class="grid-col-2">1</span>
+        <span class="grid-col-4">2</span>
+        <span class="grid-col-1">3</span>
+      </div>
+      <div class="grid-row-11">
+        <span class="grid-col-1">1</span>
+        <span class="grid-col-5">2</span>
+        <span class="grid-col-3">3</span>
+        <span class="grid-col-2">4</span>
+      </div>
+    </main>
+  </body>
+</html>

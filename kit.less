@@ -1,0 +1,32 @@
+// copy from package: less-extend
+
+.clearfix
+{
+	&:before,
+	&:after
+	{
+		visibility: hidden;
+		display: table;
+		content: '';
+	}
+	&:after
+	{
+		clear: both;
+	}
+}
+
+.float-left {
+  float: left;
+}
+
+.margin-horizontal ( @value: auto )
+{
+  margin-left: @value;
+  margin-right: @value;
+}
+
+.padding-horizontal ( @value: 0 )
+{
+  padding-left: @value;
+  padding-right: @value;
+}
